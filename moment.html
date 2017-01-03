@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- ссылка на Moment.js library -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
+</head>
+<body></p>
+<p><h2>Moment Date</h2>
+<!-- контейнер для вывода дат при помощи Moment.js -->
+<div id="displayMoment"></div></p>
+<p><h2>JavaScript Date</h2>
+<!-- контейнер для вывода дат при помощи JavaScript Date -->
+<div id="displayJsDate"></div></p>
+<p><script type="text/javascript">
+(function()
+{
+  // экземпляр объекта moment 
+  var NowMoment = moment();
+  
+  // экземпляр объекта JavaScript Date 
+  var NowDate = new Date();
+  
+  // вывод значения объекта moment в #displayMoment div
+  var eDisplayMoment = document.getElementById('displayMoment');
+  eDisplayMoment.innerHTML = NowMoment;
+  
+  // вывод значения объекта Date в #displayJsDate div
+  var eDisplayDate = document.getElementById('displayJsDate');
+  eDisplayDate.innerHTML = NowDate;
+})();
+</script></p>
+<p></body>
+</html>
