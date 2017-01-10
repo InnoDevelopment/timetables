@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h3>Add Course:</h3>
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="short_name" type="text" class="validate">
+						<label for="short_name">Short Name:</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="full_name" type="text" class="validate">
+						<label for="full_name">Full Name:</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<select>
+							<option value="" disabled selected>Choose your option</option>
+							<option value="core">Core</option>
+							<option value="value">Elective</option>
+						</select>
+						<label>Type:</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="instructor_name" type="text" class="validate">
+						<label for="instructor_name">Instructor (Full Name and Surname):</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="ta_name" type="text" class="validate">
+						<label for="ta_name">Teaching Assistant (Full Name and Surname):</label>
+					</div>
+				</div>	
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('select').material_select();
+  });
+</script>
+</html>
